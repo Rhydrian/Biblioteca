@@ -18,7 +18,7 @@ public class Main {
             System.out.print("Escolha: ");
 
             int opcao = scanner.nextInt();
-            scanner.nextLine(); // Limpa o buffer
+            scanner.nextLine();
 
             switch (opcao) {
                 case 1:
@@ -139,15 +139,15 @@ public class Main {
     }
 
     private static boolean validarAutor(String autor){
-        if(autor.isBlank()){ // null
+        if(autor.isBlank()){
             System.out.println("Nome de autor inválido.");
             return false;
         }
-        if(autor.isEmpty()){ // ""
+        if(autor.isEmpty()){
             System.out.println("Nome de autor inválido. Vazio.");
             return false;
         }
-        return true; // "a"
+        return true;
     }
 }
 
